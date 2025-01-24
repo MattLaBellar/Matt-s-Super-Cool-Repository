@@ -1,0 +1,86 @@
+/* Apply leopard print background image */
+body {
+    font-family: 'Questrial', sans-serif;
+    background: url('Print.avif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the full screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em; /* Adjust font size if needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+                 -2px -2px 4px rgba(0, 0, 0, 0.7), 
+                 2px -2px 4px rgba(0, 0, 0, 0.7), 
+                 -2px 2px 4px rgba(0, 0, 0, 0.7); /* Creates the outline effect */
+}
+
+.screen {
+    cursor: pointer;
+    width: 60%;
+    background-color: #000 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls {
+    background: #333;
+    color: #fff;
+    width: 60%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Select the class controls and fa-play */
+.controls .fa-play {
+    color: #28a745;
+}
+
+/* Select the controls and fa-stop */
+.controls .fa-stop {
+    color: #dc3545;
+}
+
+/* Remove the outline when clicking the button */
+.btn:focus {
+    outline: 0;
+}
+
+/* Progress bar style */
+.progress {
+    width: 100%;
+    margin: 0 10px;
+    background: #444;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress::-webkit-slider-thumb {
+    background: #28a745;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 16px;
+    color: #fff;
+}
+
